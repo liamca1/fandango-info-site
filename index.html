@@ -6,16 +6,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Fandango List</title>
   <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https://unpkg.com/98.css" />
 </head>
-<body>
+<body class="main">
   <script type="text/javascript">var submitted=false;</script>
     <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"     
-onload="if(submitted) {window.location='thankyou.html';}"></iframe>
-  <div class="main">
+      onload="if(submitted) {window.location='thankyou.html';}"></iframe>
+  <img src="./img/fandango_logo.png" class="item-6">
+  <div class="item-7">
     <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSfO2PlS8-JI0LVixbYWHjy4IsuAAHiXxj0x36vqcUCUebIT8g/formResponse" method="post" target="hidden_iframe" onsubmit="submitted=true;">
       <div class="form-element">
-       <span>Hello. What's your name?</span>
-       <input type="text" name="entry.1201369129" placeholder="Name">
+       <input type="text" name="entry.1201369129" placeholder="your name" class="input">
        <button type="submit">Send</button>
       </div>
     </form>
