@@ -14,8 +14,35 @@
   overflow: hidden;
   position: center;
   height: 100vh;
-  background: -webkit-gradient(linear, left top, left bottom, from(#F7B5F8), to(#F9D46C));
-  background: linear-gradient(180deg, #F7B5F8 0%, #F9D46C 100%);
+  background: linear-gradient(-45deg, #3F5147, #C9453E, #EFBE3A, #B2BDA2, #3F5147);
+  -webkit-animation: gradient 15s ease infinite;
+          animation: gradient 15s ease infinite;
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+}
+
+@-webkit-keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 .item-6 {
@@ -26,5 +53,13 @@
 .item-1 {
   height: 75vh;
   width: auto;
+}
+
+.window {
+  width: 35vw;
+}
+
+.input {
+  width: 30vw;
 }
 /*# sourceMappingURL=styles.css.map */
