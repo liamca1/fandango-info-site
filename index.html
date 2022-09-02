@@ -7,6 +7,7 @@
   <title>Fandango List</title>
   <link rel="stylesheet" href="styles.css" />
   <link rel="stylesheet" href="https://unpkg.com/98.css" />
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
   
 </head>
 <body>
@@ -86,12 +87,15 @@
         <div class="title-bar-text">&#128044 &#128044 &#128044 &#128044 &#128044</div>
       </div>
       <div class="window-body">
+
         <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSfO2PlS8-JI0LVixbYWHjy4IsuAAHiXxj0x36vqcUCUebIT8g/formResponse" method="post" target="hidden_iframe" onsubmit="submitted=true;">
           <div class="form-element">
            <input type="text" name="entry.1201369129" placeholder="your full name" class="input"><br><br>
-           <button class="button" type="submit">Send</button>
+           <div class="g-recaptcha" data-sitekey="6LfAcckhAAAAAJEGJZ3LL9xOwIpWAvY83ujx3KBt"></div>
+           <button class="button" type="submit" value="Submit">Send</button>
           </div>
         </form>
+
       </div>
         </div>
       </div>
