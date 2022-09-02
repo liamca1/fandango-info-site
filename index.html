@@ -7,13 +7,12 @@
   <title>Fandango List</title>
   <link rel="stylesheet" href="styles.css" />
   <link rel="stylesheet" href="https://unpkg.com/98.css" />
-  <script src="https://www.google.com/recaptcha/api.js"></script>
-
+  
 </head>
 <body>
-  <script type="text/javascript">var submit=false;</script>
+  <script type="text/javascript">var submitted=false;</script>
     <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"     
-      onload="if(submit) {window.location='thankyou.html';}"></iframe>
+      onload="if(submitted) {window.location='thankyou.html';}"></iframe>
   <div class="main">
     <div class="flex-container">
 
@@ -87,18 +86,10 @@
         <div class="title-bar-text">&#128044 &#128044 &#128044 &#128044 &#128044</div>
       </div>
       <div class="window-body">
-        <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSfO2PlS8-JI0LVixbYWHjy4IsuAAHiXxj0x36vqcUCUebIT8g/formResponse" method="post" target="hidden_iframe" onsubmit="submit=true;">
+        <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSfO2PlS8-JI0LVixbYWHjy4IsuAAHiXxj0x36vqcUCUebIT8g/formResponse" method="post" target="hidden_iframe" onsubmit="submitted=true;">
           <div class="form-element">
            <input type="text" name="entry.1201369129" placeholder="your full name" class="input"><br><br>
-
-           <script>
-            function onSubmit(token) {
-              document.getElementById("demo-form").submit();
-            }
-          </script>
-         
-
-           <button class="g-recaptcha button" data-sitekey="6LdwUckhAAAAAO-6kuRYH36evvXBDTh_dBwVVEQG" data-callback="onSubmit" data-action="submit" type="submit">Send</button>
+           <button class="button" type="submit">Send</button>
           </div>
         </form>
       </div>
