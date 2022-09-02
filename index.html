@@ -7,6 +7,8 @@
   <title>Fandango List</title>
   <link rel="stylesheet" href="styles.css" />
   <link rel="stylesheet" href="https://unpkg.com/98.css" />
+  <script src="https://www.google.com/recaptcha/api.js"></script>
+
 </head>
 <body>
   <script type="text/javascript">var submitted=false;</script>
@@ -88,7 +90,15 @@
         <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSfO2PlS8-JI0LVixbYWHjy4IsuAAHiXxj0x36vqcUCUebIT8g/formResponse" method="post" target="hidden_iframe" onsubmit="submitted=true;">
           <div class="form-element">
            <input type="text" name="entry.1201369129" placeholder="your full name" class="input"><br><br>
-           <button class="button" type="submit">Send</button>
+
+           <script>
+            function onSubmit(token) {
+              document.getElementById("demo-form").submit();
+            }
+          </script>
+         
+
+           <button class="g-recaptcha button" data-sitekey="6LdwUckhAAAAAO-6kuRYH36evvXBDTh_dBwVVEQG" data-callback="onSubmit" data-action="submit" type="submit">Send</button>
           </div>
         </form>
       </div>
@@ -101,66 +111,3 @@
 </body>
 
 </html>
-
-
-
-<!-- <div class="container">
-  <div class="window header">
-    <div class="title-bar">
-      <div class="title-bar-text">Dancefloor Guidelines</div>
-    </div>
-    <div class="window-body">
-      <p>Please read before submitting your name.</p>
-    </div>
-  </div>
-
-
-    <div class="window">
-      <div class="title-bar">
-        <div class="title-bar-text">Respect Yourself</div>
-      </div>
-      <div class="window-body">
-        <p>We ask that you take responsibility for your own actions during the event; take breaks, stretch your legs, think of your lower back, do a little self-care and be conscious of your consumption and how it affects you.
-          Have awareness of your limits, practice patience, and pace yourself - there is time for everything.
-          If you need help, advice, or a quiet place, we have a safety team with no judgment and a designated space at our location for all situations.
-          Ask anyone from our staff for more info.</p>
-      </div>
-    </div>
-
-    <div class="window">
-      <div class="title-bar">
-        <div class="title-bar-text">Respect Each Other</div>
-      </div>
-      <div class="window-body">
-        <p>Fandango is a community and we hope everyone will feel a sense of responsibility for each other’s comfort during our Spandau excursion. Mutual respect will ultimately lead to a better experience for all of us.
-          We want to provide a space where everyone feels safe to express their individuality. Please respect each other’s differences. Respect each other’s personal space both on and off the dancefloor. And respect pronouns, if you’re unsure, please ask. It’s okay to make mistakes, as long as we acknowledge, apologize and do better next time.
-          Always ask for consent. Whether it’s for potential sexual encounters, physical touch, or even a sensitive conversation topic, an open conversation will lead to fewer misunderstandings. Remember, we all have different boundaries.
-          We have a zero-tolerance policy for any homophobia, transphobia, xenophobia, sexism, or racism. Any incidents of harassment or abuse of any kind will result in an immediate exit. Always contact our dedicated safe space team if you need any help, support, or guidance.</p>
-      </div>
-    </div>
-
-    <div class="window">
-      <div class="title-bar">
-        <div class="title-bar-text">Respect Your Surroundings</div>
-      </div>
-      <div class="window-body">
-        <p>Our location is both beautiful inside, but also surrounded by beautiful nature that we should have immense respect for. We want to leave the location as we found it with no physical trace, just memories.
-          Now let’s dance!
-          💜</p>
-      </div>
-    </div>
-
-  <div class="window footer">
-    <div class="title-bar">
-      <div class="title-bar-text">&#128044 &#128044 &#128044 &#128044 &#128044</div>
-    </div>
-    <div class="window-body">
-      <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSfO2PlS8-JI0LVixbYWHjy4IsuAAHiXxj0x36vqcUCUebIT8g/formResponse" method="post" target="hidden_iframe" onsubmit="submitted=true;">
-        <div class="form-element">
-         <input type="text" name="entry.1201369129" placeholder="your full name" class="input"><br><br>
-         <button class="button" type="submit">Send</button>
-        </div>
-      </form>
-    </div>
-      </div>
-  </div> -->
